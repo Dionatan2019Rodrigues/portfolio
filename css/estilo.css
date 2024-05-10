@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'confortaa';
+    src: url('../fonte/Comfortaa-Light.ttf') format(truetype ), url('../fonte/Comfortaa-Bold.ttf') format(truetype ),url('../fonte/Comfortaa-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root{
+    --bordo: #A63C63;
+    --roxo: #8850BF;
+    --roxo_claro: #B1AEF2;
+    --laranja_claro: #F2A20C;
+    --laranja: #F2600C;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    min-height: 100vh;
+    background-color: var(--roxo_claro);
+    font-family: 'confortaa', sans-serif;
+    font-weight: normal;
+}
