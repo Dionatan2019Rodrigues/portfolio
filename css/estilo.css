@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Sriracha&display=swap');
+
 @font-face {
     font-family: 'confortaa';
     src: url('../fonte/Comfortaa-Light.ttf') format(truetype ), url('../fonte/Comfortaa-Bold.ttf') format(truetype ),url('../fonte/Comfortaa-Regular.ttf') format('truetype');
@@ -13,6 +15,7 @@
     --laranja_claro: #F2A20C;
     --laranja: #F2600C;
 }
+/*INICIALIZAÇÃO DO CSS GERAL    */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -20,7 +23,102 @@
 }
 html,body{
     min-height: 100vh;
-    background-color: var(--roxo_claro);
     font-family: 'confortaa', sans-serif;
     font-weight: normal;
+}
+/*CSS HEADER*/
+header{
+    background-color: var(--roxo);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+header > nav{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.466);
+}
+.logo-name{
+    color: white;
+    text-decoration: none;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+.nav{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+}
+header > nav > a:hover{
+    background-color: var(--bordo);
+}
+/*CSS MAIN*/
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+main > .divide-em-dois{
+    width: 100%;
+    height: 500px;
+    background-color: var(--roxo_claro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/******************************************************************/
+main > .divide-em-dois > #prg1{
+    width: 40vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main > .divide-em-dois > #prg1 > h1 {
+    font-size: 2em;
+}
+main > .divide-em-dois > #prg1 > h1 > #front_end{
+    color: var(--bordo);
+}
+main > .divide-em-dois > article > img{
+    width: 25vw;
+}
+/******************************************************************/
+main > .divide-em-dois > #prg2{
+    width: 30vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main > .divide-em-dois > #prg2 > p{
+    text-indent: 10%;
+    text-align: justify;
+}
+/******************************************************************/
+main > #slider_projetos{
+    width: 100vw;
+    height: 500px;
+    background-color: var(--roxo_claro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*CSS FOOTER*/
+footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
 }
